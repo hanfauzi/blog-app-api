@@ -36,6 +36,7 @@ model Blog {
   title       String   @unique
   description String   @db.Text
   thumbnail   String
+  category    String
   content     String
   userId      Int
   user        User     @relation(fields: [userId], references: [id])
